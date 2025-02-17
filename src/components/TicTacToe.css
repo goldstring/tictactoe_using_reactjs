@@ -1,0 +1,54 @@
+.gameContainer {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.gameTitle {
+  color: #0ccdcd;
+  font-weight: 600;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.gameSubTitle {
+  text-align: center;
+}
+
+.gameBoard {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #f9f5f5ec;
+  width: 80px;
+  height: 80px;
+  margin: 10px;
+}
+
+.cell:hover {
+  cursor: pointer;
+  background-color: aliceblue;
+}
+
+.cell img {
+  width: 60px;
+  height: 60px;
+}
+.gameResetContainer {
+  display: flex;
+  justify-content: center;
+}
+.resetBtn {
+  background-color: #0ccdcd;
+  margin: 20px;
+  font-size: 15px;
+  font-weight: 600;
+}
